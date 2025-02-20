@@ -1,3 +1,4 @@
+// Diminuir o numero de evenstos desnecessarios ,p ara economizar codigo
 // Script para Registro de Lead (indexCadastro.html)
 document.addEventListener("DOMContentLoaded", () => {
   const leadForm = document.getElementById('lead-form');
@@ -184,7 +185,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (resizer) {
     resizer.addEventListener('mousedown', (e) => {
-      isResizing = true;
+      isResizing = true; // essa variavel foi inicializada, porem nao esta sendo utilizada
       document.addEventListener('mousemove', handleMouseMove);
       document.addEventListener('mouseup', () => {
         isResizing = false;
