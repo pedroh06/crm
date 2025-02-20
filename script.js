@@ -1,3 +1,4 @@
+// MUDE O NUMERO DE COLUNAS, PARA NAO GERAR MUITOS EVENTOS
 // Script para Registro de Lead (indexCadastro.html)
 document.addEventListener("DOMContentLoaded", () => {
   const leadForm = document.getElementById('lead-form');
@@ -184,7 +185,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (resizer) {
     resizer.addEventListener('mousedown', (e) => {
-      isResizing = true;
+      isResizing = true; // ESSA VARIAVEL FOI CRIADA POREM NAO ESTA SENDO UTILIZADA!
       document.addEventListener('mousemove', handleMouseMove);
       document.addEventListener('mouseup', () => {
         isResizing = false;
